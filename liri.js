@@ -1,5 +1,6 @@
 //set variables
 require("dotenv").config();
+
 // import spotify
 var Spotify = require("node-spotify-api");
 // import the API keys
