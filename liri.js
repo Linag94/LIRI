@@ -14,19 +14,25 @@ var inputParameter = process.argv.splice(3).join(" ");
 console.log(userOption, inputParameter)
 if (userOption === 'movie-this') {
     //  run movie function
+
 } else if (userOption === 'spotify-this-song'){
     //   run spotify function
-}
 
-//  Function for Concert Info
-//  Function for Spotify
-//  Function for Movies
+} else if (userOption === 'concert-this'){
+    //  run concert function
+
+} else if (userOption === 'do-what-it-says'){
+    //  run do what it says function
+    
+};
+
+
 
 //  Function for log text
 function logText(text){
     fs.appendFile("./TEXT/log.txt", text + "\n", function(err){
         if(err) throw err;
-        console.log("Logged")
+        // console.log("Logged")
     })
 }
 logText(userOption + ", " + inputParameter)
