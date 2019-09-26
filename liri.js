@@ -1,13 +1,16 @@
 //set variables
 require("dotenv").config();
 
-// import spotify
+// variables
 var Spotify = require("node-spotify-api");
-// import the API keys
+var Spotify = new Spotify(keys.spotify);
 var keys = require("./keys");
-// import axios 
 var axios = require("axios");
-// keys information 
-var spotify = new Spotify(keys.spotify);
+var request = require("request");
+var fs = require("fs");
+var userOption = process.argv[2]; 
+var inputParameter = process.argv[3];
+
+
 
 
