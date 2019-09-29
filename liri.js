@@ -5,8 +5,8 @@ require("dotenv").config();
 var keys = require("./keys");
 var Spotify = require("node-spotify-api");
 var spotify = new Spotify(keys.spotify);
-var moment = require('moment'); 
-moment().format();
+// var moment = require('moment'); 
+// moment().format();
 var axios = require("axios");
 var fs = require("fs");
 var userOption = process.argv[2];
@@ -56,6 +56,8 @@ switch (userOption) {
     }
 
 // } else if (userOption === 'spotify-this-song'){
+    
+function spotifySong(userOption) {
     if(!userOption){
         userOption = "The Sign";
     }
@@ -127,3 +129,4 @@ function logText(text){
 }
 logText(userOption + ", " + inputParameter)
 
+};
