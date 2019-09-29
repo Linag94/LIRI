@@ -34,6 +34,10 @@ This will output the following information about the movie the user enters to th
 
 -Actors in the movie
 
+## Concert-this [Artist Name Here]
+This will return upcoming tour dates of the artist selected by the user. If there is no upcoming dated this will inform the user as well.
+
+
 ## Do-what-it-says [Users Instructions]
  Using the fs Node package, LIRI will take the text inside of random.txt and then use it to call one of LIRI’s commands.
 
